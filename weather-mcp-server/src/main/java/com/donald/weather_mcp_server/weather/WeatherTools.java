@@ -6,10 +6,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-/**
- * Weather tools exposed over MCP. The agent typically chains them:
- * geocodeCity -> getCurrentWeather / getForecast (the weather calls need coordinates).
- */
+
 @Service
 public class WeatherTools {
 
@@ -72,7 +69,6 @@ public class WeatherTools {
 		return new ForecastResult(daily);
 	}
 
-	// --- Tool return shapes (serialized back to the model) ---
 
 	public record GeoResult(String name, String country, double latitude, double longitude) { }
 
