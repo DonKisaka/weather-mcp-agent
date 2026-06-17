@@ -10,4 +10,7 @@ public class WeatherMcpServerApplication {
 		SpringApplication.run(WeatherMcpServerApplication.class, args);
 	}
 
+	// Tools are declared with @McpTool on WeatherTools and auto-registered by the
+	// MCP server annotation scanner (enabled by default). No ToolCallbackProvider needed.
+
 }
